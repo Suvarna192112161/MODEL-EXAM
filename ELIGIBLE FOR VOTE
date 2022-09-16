@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+ int age;
+ printf("Enter your age : ");
+ scanf("%d",&age);
+ if(age>0){
+ if(age>=18){
+ printf("Your eligible for vote");
+ }
+ else{
+ int dif=18-age;
+ printf("You are allowed to vote after %d years",dif);
+ }
+ }
+ else{
+ printf("Invalid input");
+ }
+}
+
+TEST CASEES
+Enter your age : 7
+You are allowed to vote after 11 years
+
+Enter your age : 25
+Your eligible for vote
+
+Enter your age : EIGHTEEN
+Your eligible for vote
+
+Enter your age : 12
+You are allowed to vote after 6 years
+
+Enter your age : -18
+Invalid input
+
+Enter your age : 34.5
+Your eligible for vote
